@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DI_WebAPI.DataReader
+namespace DI_Datareader
 {
     public class DBReader : IDataReader
     {

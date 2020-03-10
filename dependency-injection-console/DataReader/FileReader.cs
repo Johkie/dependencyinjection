@@ -4,15 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace DI_WebAPI.DataReader
+namespace DI_Datareader
 {
     public class FileReader : IDataReader
     {
         public IFileLoader loader { get; set; }
+        
         public FileReader()
         {
-            string filePath = "DataReader/personFile.txt";
-            loader = new FileLoader(filePath);
+            loader = new FileLoader("DataReader/personFile.txt");
         }
 
         public IEnumerable<Person> ParseData(string data)

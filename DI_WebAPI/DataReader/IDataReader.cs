@@ -7,6 +7,6 @@ namespace DI_WebAPI.DataReader
 {
     public interface IDataReader
     {
-        public List<Person> GetData();
+        public IEnumerable<Person> GetPeople();
     }
 }

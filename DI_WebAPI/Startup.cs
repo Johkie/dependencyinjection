@@ -33,11 +33,15 @@ namespace DI_WebAPI
                 options.AddPolicy(CORSPolicy, builder =>
                 { builder.WithOrigins("http://127.0.0.1:5500").AllowAnyHeader().AllowAnyMethod(); });
             });
-            
+
             // Dependency Injection!
-            services.AddSingleton<IDataReader, FileReader>();
+            //services.AddTransient<IDataReader, DBReader>();
+            services.AddTransient<IDataReader, FileReader>();
 
-
+            var FileReader = new FileReader();
+            FileReader.loader = new FileLoader("DataReader/anotherFile.txt");
+            PersonController pc = new PersonController(FileReader);
+            
             services.AddControllers();
         }
 

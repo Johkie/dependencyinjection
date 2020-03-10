@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DI_WebAPI.Controllers
+namespace DI_Datareader
 {
-    interface Interface
+    public interface IDataReader
     {
+        public IEnumerable<Person> GetPeople();
     }
 }

@@ -1,0 +1,6 @@
+1,Word,Pad,254
+2,Pad,Thai,45
+3,Bjornes,Magasin,48
+4,Arne,Vis,94
+5,Stefan,Lofven,2
+6,Anders,And,57

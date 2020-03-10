@@ -21,7 +21,7 @@ namespace DI_WebAPI.Controllers
         [HttpGet]
         public IEnumerable<Person> GetPersons()
         {
-            return _dataReader.GetData();
+            return _dataReader.GetPeople();
         }
     }
 }
